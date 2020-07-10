@@ -117,10 +117,8 @@ rm pruned_data.bim
 rm pruned_data.fam
 rm pruned_data.hh
 rm pruned_data.log
-rm pruned_data.nosex
 rm prunedHet.hh
 rm prunedHet.log
-rm prunedHet.nosex
 rm pruning.log
 rm pruning.prune.in
 rm pruning.prune.out
@@ -166,7 +164,6 @@ rm gender_check2.log
 rm gender_check2.nosex
 rm gender_check1.hh
 rm gender_check1.log
-rm gender_check1.nosex
 rm after_heterozyg_call_rate.bed
 rm after_heterozyg_call_rate.bim
 rm after_heterozyg_call_rate.fam
@@ -222,7 +219,7 @@ NOTES:
 ```
 ./plink --bfile after_gender --keep PCA_filtered_europeans.txt --make-bed --out after_gender_heterozyg_hapmap
 
-cat PCA_filtered_asians.txt PCA_filtered_africans.txt PCA_filtered_mixed_race.txt > hapmap_outliers33.txt
+cat PCA_filtered_asians.txt PCA_filtered_africans.txt > hapmap_outliers33.txt
 ```
 ---
 <a id="5"></a>
