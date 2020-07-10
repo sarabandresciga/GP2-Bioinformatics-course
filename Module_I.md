@@ -235,8 +235,8 @@ NOTES:
 ./plink --bfile after_gender_heterozyg_hapmap --extract pruning.prune.in --make-bed --out pruned_data
 ./plink --bfile pruned_data --het --out prunedHet
 
-./gcta64 --bfile pruned_data --make-grm --out GRM_matrix --autosome --maf 0.05 
-./gcta64 --grm-cutoff 0.125 --grm GRM_matrix --out GRM_matrix_0125 --make-grm
+./gcta --bfile pruned_data --make-grm --out GRM_matrix --autosome --maf 0.05 
+./gcta --grm-cutoff 0.125 --grm GRM_matrix --out GRM_matrix_0125 --make-grm
 ./plink --bfile after_gender_heterozyg_hapmap --keep GRM_matrix_0125.grm.id --make-bed --out after_gender_heterozyg_hapmap_pihat
 
 cut -f 1,2 after_gender_heterozyg_hapmap.fam > IDs_before_relatedness_filter.txt
