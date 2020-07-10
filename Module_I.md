@@ -79,7 +79,6 @@ mv raw.test_call_rate.irem CALL_RATE_OUTLIERS.txt
 rm call_rates.lmiss
 rm call_rates.log
 rm call_rates.hh
-rm call_rates.nosex
 mv call_rates.imiss CALL_RATES_ALL_SAMPLES.txt
 ```
 
@@ -107,7 +106,7 @@ cut -f 1,2 HETEROZYGOSITY_OUTLIERS.txt > all_outliers.txt
 
 mv prunedHet.het HETEROZYGOSITY_DATA.txt
 
-./plink --bfile RAW.test_call_rate --remove all_outliers.txt --make-bed --out after_heterozyg
+./plink --bfile RAW.test_call_rate --remove all_outliers.txt --make-bed --out after_heterozyg_call_rate
 ```
 
 ```
