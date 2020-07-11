@@ -71,7 +71,7 @@ if not this will cause trouble at the end of this script
 ### Remove call rate outliers
 
 ```
-./plink --bfile RAW.test --mind 0.05 --make-bed --out RAW.test_call_rate
+./plink --bfile RAW.test --mind 0.05 --make-bed --out raw.test_call_rate
 ```
 
 ```
