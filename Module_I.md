@@ -233,7 +233,6 @@ NOTES:
 ```
 ./plink --bfile after_gender_heterozyg_hapmap --geno 0.01 --maf 0.05 --indep-pairwise 50 5 0.5 --out pruning
 ./plink --bfile after_gender_heterozyg_hapmap --extract pruning.prune.in --make-bed --out pruned_data
-./plink --bfile pruned_data --het --out prunedHet
 
 ./gcta --bfile pruned_data --make-grm --out GRM_matrix --autosome --maf 0.05 
 ./gcta --grm-cutoff 0.125 --grm GRM_matrix --out GRM_matrix_0125 --make-grm
